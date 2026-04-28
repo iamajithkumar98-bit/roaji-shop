@@ -304,6 +304,8 @@ input:read-only{opacity:0.5;cursor:not-allowed;}
   .app-header{padding:10px 12px;}
 }
 </style>
+<script src="https://www.gstatic.com/firebasejs/10.12.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.1/firebase-database-compat.js"></script>
 </head>
 <body>
 <div class="notif" id="notif"></div>
@@ -402,9 +404,4 @@ input:read-only{opacity:0.5;cursor:not-allowed;}
     <div class="section-tabs">
       <button class="sec-tab active" onclick="switchSec('gift','new-order',this)">➕ New Order</button>
       <button class="sec-tab" onclick="switchSec('gift','orders',this)">📋 Orders</button>
-      <button class="sec-tab" onclick="switchSec('gift','tracking',this)">🚚 Tracking</button>
-      <button class="sec-tab" onclick="switchSec('gift','report',this)">📊 Report</button>
-    </div>
-
-    <div class="section gift active" id="gift-new-order">
-      <div cla
+      <button class="sec-tab" onclick="switchSec('gift','tracking',this)">🚚 Tracking
